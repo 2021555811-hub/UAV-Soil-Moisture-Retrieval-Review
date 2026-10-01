@@ -1,0 +1,29 @@
+# Origin reproduction and export instructions
+
+The repository is designed so that Origin is optional. The R scripts are the independent reproducibility path.
+
+## Import
+
+1. Open Origin.
+2. Import `data/processed/combined_coded_dataset.csv` or open the Excel workbook.
+3. Use `Study_ID` as the study identifier and `Result_ID` as the result identifier.
+4. Treat `R2` and `RMSE_cm3_cm3` as numeric variables and retain missing RMSE values as missing, not zero.
+
+## Recommended graphs
+
+The R scripts reproduce the core descriptive graphics:
+
+- publication trend by year
+- R² distribution by sensor type
+- R² distribution by model category
+- RMSE distribution by soil depth
+
+Equivalent Origin graphs can be produced with Box Chart and Column/Bar Chart templates.
+
+## Export
+
+For manuscript figures, export raster figures at 600 dpi where required by the target journal. Keep axis labels, units, and category names consistent with the manuscript. Do not alter underlying observations during graphical polishing.
+
+## .opju file
+
+No `.opju` file is included in this release because an Origin project cannot be generated or validated outside Origin itself. If you create an Origin project locally, place it in this directory and commit it as a release artifact if journal/data policy permits.
